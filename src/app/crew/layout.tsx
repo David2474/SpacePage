@@ -5,7 +5,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <div>
+      <div className="bg-[url('/crew/bg-crew-desktop.jpg')]">
         {children}
       </div>
   );
