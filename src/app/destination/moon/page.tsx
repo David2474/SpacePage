@@ -1,5 +1,4 @@
 import NavDestination from "@/components/NavDestination";
-import Image from "next/image";
 
 export default function page() {
   return (
