@@ -1,4 +1,7 @@
+'use client'
+
 import Link from "next/link"
+import { usePathname } from "next/navigation";
 
 const links = [
     {
@@ -20,17 +23,21 @@ const links = [
 ]
 
 export default function NavDestination() {
+const pathname = usePathname();
+
   return (
     <nav>
         {
         links.map((link) =>{
             return( 
                 <Link 
-                href={link.href}
-                key={link.name} 
-                className='border border-violet-700 mr-2'>
-                {link.name}
-              </Link>
+                    href={link.href}
+                    key={link.name} 
+                    className={` mr-5 py-1 uppercase 
+                    ${ pathname === link.href ? 'border-b-2 border-white' : ''}
+                    `}>
+                    {link.name}
+                </Link>
             )
         })
         }

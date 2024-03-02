@@ -14,7 +14,7 @@ export default function page() {
             </div>
             <div className="w-9/12 flex flex-col justify-center">
               <p className="uppercase">The Terminology...</p>
-              <p className="uppercase text-5xl ">Launch Vehicle</p>
+              <p className="uppercase text-5xl ">Space Vehicle</p>
               <p className="my-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Assumenda labore maxime voluptates aliquam tenetur corporis
@@ -28,7 +28,7 @@ export default function page() {
             <Image
               width={450}
               height={300}
-              src={"/technology/image-launch.jpg"}
+              src={"/technology/space-capsule.jpg"}
               alt="image of launch space"
               className="object-fill "
             />

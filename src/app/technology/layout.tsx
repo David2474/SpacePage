@@ -5,7 +5,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <div className="bg-gray-800 text-white">
+      <div className="bg-[url('/technology/background-desktop.jpg')] text-white">
         {children}
       </div>
   );
